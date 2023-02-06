@@ -3,11 +3,13 @@ import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
 export interface IFormValues {
   email: string;
   password: string;
+  terms: string;
+  passwordConfirmation: string
 }
 
 type InputProps = {
   label?: string;
-  name: "email" | "password"
+  name: "email" | "password" | "terms" | "passwordConfirmation"
   placeholder?: string;
   type: string;
   register: UseFormRegister<IFormValues>;

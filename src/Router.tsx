@@ -1,7 +1,7 @@
 import { FC, ReactElement } from "react";
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/login";
-import Register from "./pages/register";
+import Register from "./pages/register/index";
 
 const Router: FC = (): ReactElement => {
   return (
